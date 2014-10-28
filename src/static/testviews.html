@@ -65,6 +65,8 @@
             scripts.push('../plugins/visualisation3d/public/js/Babylon.js');
             scripts.push('../plugins/visualisation3d/public/js/visualisation3d.js');
 
+            scripts.push('../plugins/lights/public/js/lights.js');
+
 
 
             // Add you plugin here !!!
@@ -77,6 +79,7 @@
             styles.push('../plugins/headsup-menu/public/css/style.css');
             styles.push('../plugins/topdowncompass/public/css/topdowncompass.css');
             styles.push('../system-plugins/plugin-finder/public/css/style.css');
+            styles.push('../plugins/lights/public/css/lights.css');
 
             frameDoc.writeln(new EJS({url: '../views/index.ejs'}).render({title: "testing", styles:styles, scripts:scripts}));
             frameDoc.close();
